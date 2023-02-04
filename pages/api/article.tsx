@@ -6,17 +6,11 @@ const SIZE = {
   HEIGHT: 630,
 };
 
-const font = fetch(
-  new URL("../../assets/PretendardVariable.woff2", import.meta.url)
-).then((res) => res.arrayBuffer());
-
 export const config = {
   runtime: "edge",
 };
 
 export default async function handler(req: NextRequest) {
-  // const fontData = await font;
-
   const { searchParams } = new URL(req.url);
   console.log({ searchParams });
 
@@ -37,7 +31,7 @@ export default async function handler(req: NextRequest) {
           width: "100%",
           display: "flex",
           padding: "3rem 3rem",
-          fontFamily: "-apple-system",
+          fontFamily: "Inter var -apple-system",
           flexDirection: "column",
           backgroundColor: "white",
         }}

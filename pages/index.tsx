@@ -18,6 +18,8 @@ export default function Page() {
             }/api/vercel`
           }
         />
+
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
 
       <h1>A page with Open Graph Image.</h1>
